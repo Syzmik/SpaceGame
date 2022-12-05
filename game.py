@@ -625,7 +625,6 @@ while run:
                     pygame.display.flip()
                     pygame.time.delay(500)
                     terrillium -= 1
-                    age += .12
                     score += random.randrange(200,1000,55)
                     break
 
@@ -635,7 +634,7 @@ while run:
             level = 0
             score -= 1000
 
-        if (man.x >= 430)and (man.y>= 200 and man.y <= 250) and score >= 1000 : #Earth Ship#
+        if (man.x >= 430)and (man.y>= 200 and man.y <= 250) and score >= 1000 : #Mars Ship#
             bg = pygame.image.load('mars.png')
             level = 1
             score -= 1000
@@ -680,7 +679,7 @@ while run:
                     terrillium += random.randrange(1,8,2)
                     break
 
-        if(man.x <= 5) and (man.y <= 500 and man.y >= 430): #sell Terrillium#
+        if(man.x <= 5) and ( man.y <= 430): #sell Terrillium#
             clock = pygame.time.Clock()
             run = True
             while run:
