@@ -610,7 +610,7 @@ while run:
                         redrawGameWindowDead()
                     break
 
-        if(man.x <= 5) and (man.y >= 500 and man.y <= 430): #sell Terrillium#
+        if(man.x <= 5) and (man.y <= 500 and man.y >= 430): #sell Terrillium#
             clock = pygame.time.Clock()
             run = True
             while run:
@@ -649,7 +649,7 @@ while run:
             level = -2
             bg = pygame.image.load('gamewinner.png')
 
-        if (man.x >= 100 and man.x <=300) and (man.y >350) and score >= 15000:
+        if (man.x >= 200 and man.x <=250) and (man.y >432) and score >= 15000:
             bg = pygame.image.load('alphacentaurievil.png')
             level = 9
             score -= 15000
